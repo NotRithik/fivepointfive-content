@@ -63,12 +63,11 @@ Open `content/releases.csv`. Each release has a permanent `id`, such as `5.5-067
 | `catalogue_link` | Optional: a different catalogue destination, e.g. the whole album. |
 | `catalogue_cover` | Optional: different artwork specifically for the catalogue. |
 | `hue` | Optional fallback sleeve colour: 0 red, 1 white, 2 dark, 3 grey. Keep the existing value, or leave blank for a new record. Real cover artwork takes precedence. |
-| `hue` | Optional fallback sleeve colour: 0 red, 1 white, 2 dark, 3 grey. Keep the existing value, or leave blank for a new record. Real cover artwork takes precedence. |
 
 Example shape — replace these example values with your real release and uploaded image:
 
 ```csv
-5.5-NEW,NEW SINGLE,"ARTIST ONE, ARTIST TWO",SINGLE,2026,https://open.spotify.com/track/REPLACE_ME,images/covers/new-single.jpg,yes,,,,,
+5.5-NEW,NEW SINGLE,"ARTIST ONE, ARTIST TWO",SINGLE,2026,https://open.spotify.com/track/REPLACE_ME,images/covers/new-single.jpg,yes,,,,
 ```
 
 Move the row to where the cover should appear. The All view follows the file from top to bottom. Year/search filters only hide non-matching items; they do not change the order. To get a clean year section, keep rows for the same year together. Moving a row between years does not silently change its `year` value.

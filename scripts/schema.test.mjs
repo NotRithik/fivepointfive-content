@@ -8,7 +8,6 @@ const seed={schemaVersion:1,revision:'test',repository:'test/content',generatedA
   releases:[{cat:'TEST-1',title:'A release',artist:'Artist',project:'SINGLE',year:2026,spotify:'https://open.spotify.com/track/example',cover:'/covers/test.png',hue:0,youtube:'',featured:true,featuredOrder:1,top:true,topOrder:1,catalogVisible:true}],
   merch:[{id:'TEST-1',name:'Product',price:100,link:'https://example.com/buy',images:['/merch/test.png']}],socials:[],settings:structuredClone(settings)}};
 seed.data.settings.contact={enabled:true,provider:'formspark',endpoint:'https://submit-form.com/testContact12',notificationsEnabled:false};
-seed.data.settings.contact={enabled:true,provider:'formspark',endpoint:'https://submit-form.com/testContact12',notificationsEnabled:false};
 seed.data.settings.newsletter={enabled:false,heading:'Newsletter',description:'Test',endpoint:''};
 const copy=()=>structuredClone(seed);
 test('current editable files compile successfully',async()=>validateSnapshot(await build({localAssets:true})));
