@@ -24,7 +24,7 @@ export function parseCSV(text,file='CSV'){
 }
 const headers={
   'current-artists.csv':['name','genre','link'],'alumni-artists.csv':['name','genre','link'],
-  'releases.csv':['id','title','artist','project','year','link','cover','in_catalogue','catalogue_title','catalogue_link','catalogue_cover'],
+  'releases.csv':['id','title','artist','project','year','link','cover','in_catalogue','catalogue_title','catalogue_link','catalogue_cover','hue'],
   'new-releases.csv':['release_id','youtube','playback_title'],'shelf.csv':['release_id','title','cover','link'],
   'shop.csv':['id','name','price','link','images'],'socials.csv':['label','handle','url'],
 };
@@ -50,7 +50,7 @@ export async function build({repository='NotRithik/fivepointfive-content',revisi
   const releases=[];
   for(const r of await csv('releases.csv')){
     if(!['yes','no'].includes(r.in_catalogue))throw new Error(`releases.csv ${r.id}: in_catalogue must be yes or no`);
-    releases.push({cat:r.id,title:r.title,artist:r.artist,project:r.project,year:Number(r.year),spotify:r.link,cover:await image(r.cover,`${r.id}.cover`),hue:releases.length%4,youtube:'',featured:false,top:false,catalogVisible:r.in_catalogue==='yes',catalogTitle:r.catalogue_title,catalogLink:r.catalogue_link,catalogCover:await image(r.catalogue_cover,`${r.id}.catalogue_cover`)});
+    releases.push({cat:r.id,title:r.title,artist:r.artist,project:r.project,year:Number(r.year),spotify:r.link,cover:await image(r.cover,`${r.id}.cover`),hue:r.hue===''?0:Number(r.hue),youtube:'',featured:false,top:false,catalogVisible:r.in_catalogue==='yes',catalogTitle:r.catalogue_title,catalogLink:r.catalogue_link,catalogCover:await image(r.catalogue_cover,`${r.id}.catalogue_cover`)});
   }
   const byId=new Map(releases.map(r=>[r.cat,r]));
   const apply=async(file,fn,max)=>{const rows=await csv(file);if(rows.length>max)throw new Error(`${file}: this physical display has ${max} slots. Replace or remove a row before adding another.`);const used=new Set();for(const [i,row]of rows.entries()){const release=byId.get(row.release_id);if(!release)throw new Error(`${file} row ${i+2}: unknown release_id ${row.release_id}. Add it to releases.csv first.`);if(used.has(row.release_id))throw new Error(`${file}: duplicate release_id ${row.release_id}`);used.add(row.release_id);await fn(row,release,i);}};

@@ -1,67 +1,67 @@
-id,title,artist,project,year,link,cover,in_catalogue,catalogue_title,catalogue_link,catalogue_cover
-5.5-027,TOP FLOOR,EKKAN & MARZ,SINGLE,2026,https://open.spotify.com/track/0dEwoE9moc5sAQVLyRhXGE,images/covers/ekkan-top-floor-final-cover-4kx4k.jpg,yes,,,
-5.5-061,CHINTA NAHI,"FRAPPE ASH, KUMAR SANU & WHEATISH BROWN",SINGLE,2026,https://open.spotify.com/track/5sM59JbBnoOeTzsi4CIfql,images/covers/chinta-nahi.webp,yes,,,
-5.5-034,JHUNJHUNU DREAMS,ARIC & ANDAAZ,JHUNJHUNU DREAMS EP,2026,https://open.spotify.com/album/4awjUji0vH08QGQmGxIPpv,images/covers/jhunjhunu-dreams-final-jpg.jpg,yes,,,
-5.5-054,SHARABO KI TARAH,ATEN BAKSH,SINGLE,2026,https://open.spotify.com/track/0PlgoDpNfgDOS8fj4XB3GZ,images/covers/sharabo-ki-tarah.jpg,yes,,,
-5.5-052,NIYAT,RAZE,SINGLE,2026,https://open.spotify.com/track/5zsYvXb55y3Av7hZULr7lU,images/covers/raze-niyat-final-cover.jpg,yes,,,
-5.5-020,CHHORI TOXIC,URBAN POET,SINGLE,2026,https://open.spotify.com/track/3IeBd6lCKIc8y79pDbd3QX,images/covers/client-chhori-toxic.webp,yes,,,
-5.5-026,FIRST SIGHT,EKKAN & MARZ,SINGLE,2026,https://open.spotify.com/album/1oZsx2Pc3vjWOYKGlYyJR5,images/covers/ekkan-artwork.jpg,yes,,,
-5.5-048,MEHAK,KARTIK,SINGLE,2026,https://open.spotify.com/track/6gspHdgzQ4VEiMRL99RH1u,images/covers/mehak-cover-jpg.jpg,yes,,,
-5.5-011,12 TOLA / NAKA,VIKRODH,SINGLE (12 TOLA / NAKA),2026,https://open.spotify.com/track/6aJ4AFNOZkjt5LyKuJIyl3,images/covers/12-tol.jpg,yes,,,
-5.5-045,LATE NIGHT FRAPPE,FRAPPE ASH,LATE NIGHT FRAPPE (ALBUM/EP),2026,https://open.spotify.com/album/2pXzljskWl3qDVf5QxRMS2,images/covers/late-night-frappe-fnl-1.jpg,yes,,,
-5.5-064,KAB AUR KAHAN,FRAPPE ASH & LEONIK,SINGLE,2026,https://open.spotify.com/track/6oEd9BoWjedxn1Z6AhsjHe,images/covers/kab-aur-kahan.webp,yes,,,
-5.5-016,BAIRAAGI,SINASH,SINGLE,2026,https://open.spotify.com/track/57zCxL1K0LeFo0q2g7vMCM,images/covers/bairaagi-cover.jpg,yes,,,
-5.5-040,KAANJI KA LAAL,"FRAPPE ASH, WHEATISH BROWN & NANKU",SINGLE,2026,https://open.spotify.com/track/5OcjEmG5Rpd7SsaHkI9psW,images/covers/kkl-cover.jpg,yes,,,
-5.5-057,US,ARIC & ANDAAZ,JHUNJHUNU DREAMS EP,2026,https://open.spotify.com/album/4awjUji0vH08QGQmGxIPpv,images/covers/us-new.jpg,yes,,,
-5.5-049,NATURAL DISASTER,ITXAMRITANSH,SINGLE,2026,https://open.spotify.com/track/3DGGyzmbIaBLHIO7GyXsyr,images/covers/natural-disaster-final-w-logo.jpg,yes,,,
-5.5-030,GAL FUNK,URBAN POET,SINGLE,2026,https://open.spotify.com/track/2XM1Q2fxrFnKj5XywHjHWg,images/covers/gal-funk-presents.jpg,yes,,,
-5.5-058,WAMPINO,WAMP,WAMPINO (ALBUM),2025,https://open.spotify.com/album/5IjM8QycWxek7QQwAA18CW,images/covers/wampino-artwork.jpg,yes,,,
-5.5-059,ZAMANA,SINASH,SINGLE,2025,https://open.spotify.com/track/4VqI7VRsMt1TrM6eZpTx1Q,images/covers/zamana-cover.jpg,yes,,,
-5.5-046,LIVE FROM THE PIND,13 JEET,LIVE FROM THE PIND EP,2025,https://open.spotify.com/album/76v5kNUh58Wd8dc0Q0MGfS,images/covers/lftp-cover.jpg,yes,,,
-5.5-010,100KMH,13 JEET & SAVONN,LIVE FROM THE PIND EP,2025,https://open.spotify.com/album/6ttBD87Ao18kAN0Okb2Ecd,images/covers/100kmh-cover.jpg,yes,,,
-5.5-039,KINGSIZE,RAZE & JOKER390P,SINGLE,2025,https://open.spotify.com/album/3vovjGusrhfZPwcDcJbxmv,images/covers/kingsize-cover.jpg,yes,,,
-5.5-024,DOWN,KIARA CHETTRI,SINGLE,2025,https://open.spotify.com/album/6grxeBbJltUpkHbyGPPX5V,images/covers/down-cover.jpg,yes,,,
-5.5-017,BANDS ON BANDS,13 JEET & SAVONN,SINGLE,2025,https://open.spotify.com/album/6iQYxtDMh69MTlIQGdSn2L,images/covers/bob-cover.jpg,yes,,,
-5.5-025,EYE CONTACT,HARSH NUSSI & DEEP KLAIR,SINGLE,2025,https://open.spotify.com/track/3GZhBDbtJ4up24jaifgtNw,images/covers/ec-cover.jpg,yes,,,
-5.5-065,JAHAAZ,"URBAN POET, YUNG SAMMY & WAMP",SINGLE,2025,https://open.spotify.com/track/2L0qmhXp5tfg8jM9JU7ocP,images/covers/jahaaz.webp,yes,,,
-5.5-032,ICE CREAM FRAPPE,FRAPPE ASH & TOORJO DEY,ICE CREAM FRAPPE (ALBUM),2025,https://open.spotify.com/album/2IZGdcRwNgJVj3JRX5e0iL,images/covers/icf-cover.jpg,yes,,,
-5.5-035,JUICE,"FRAPPE ASH, TOORJO DEY & NATIQ",ICE CREAM FRAPPE (ALBUM),2025,https://open.spotify.com/track/3yqCKEWExzZGdjOTuASa6N,images/covers/juice-artwork.jpg,yes,,,
-5.5-060,CHATAK,TUSHAR NAGAR & STARBOIBEATZ,SINGLE,2025,https://open.spotify.com/track/73dKHHWyjTipakYvY5GR5T,images/covers/chatak.webp,yes,,,
-5.5-055,SHARMEELI,FRAPPE ASH & TOORJO DEY,SINGLE,2025,https://open.spotify.com/track/3a0cGrLF6Ac1QqG3PCoIDY,images/covers/sharmeeli-cover.jpg,yes,,,
-5.5-023,DND,URBAN POET,SINGLE,2025,https://open.spotify.com/track/5wgpJmwYY98fKBM8f5pjQT,images/covers/dnd-cover.jpg,yes,,,
-5.5-022,DOWN FOR ME,"FLYBOY S, D3VA & WAMP",SINGLE,2025,https://open.spotify.com/track/0IHcmnoQ6VRN4KDLzGWomN,images/covers/dfm-cover.jpg,yes,,,
-5.5-015,BAALMA,SINASH,SINGLE,2025,https://open.spotify.com/track/0YUKKSpxLBoKRyrBW9EzTL,images/covers/client-baalma-20261005.webp,yes,,,
-5.5-019,CHALE GAYE,KARIGAR,SINGLE,2025,https://open.spotify.com/track/1S6BhAt66j3rFDrbqlSet5,images/covers/chal-gaye-final-cover.jpg,yes,,,
-5.5-041,KAGAZ KI SADAK,SIHIE,SINGLE,2025,https://open.spotify.com/track/1NZDR17cFDz4pPlmDJ8n0K,images/covers/kks-cover.jpg,yes,,,
-5.5-043,KUTTA,KARIGAR,SINGLE,2025,https://open.spotify.com/track/6uraa3kUgEZG8w0gG8wkPG,images/covers/kutta-cover.jpg,yes,,,
-5.5-050,ONE FROM THE CROWD,DOX,ONE FROM THE CROWD EP,2025,https://open.spotify.com/album/5KOxI4N3j6nWS1OiEUm8Ab,images/covers/one-from-the-crowd-artwork.jpg,yes,,,
-5.5-047,LAW OF ATTRACTION,SIHIE & FATBOI RACCOON,SINGLE,2025,https://open.spotify.com/track/1J8YfmfernoOLG03opyHtd,images/covers/loa-cover.jpg,yes,,,
-5.5-021,CULTURE TIES,URBAN POET,CULTURE TIES EP,2025,https://open.spotify.com/album/3FJ73JabP50rP2tp8GCaZv,images/covers/culture-ties-cover.jpg,yes,,,
-5.5-063,PARTY MEI AA (RAA-MIX),DRV & RAFTAAR,SINGLE,2024,https://open.spotify.com/track/5bHMrc3XDM6OJ4CPqvX8et,images/covers/party-mei-aa-raa-mix.webp,yes,,,
-5.5-006,RAAT KHATAM,DRV,POLARIS,2024,https://open.spotify.com/album/3tM5tWzzX8LZpk7iTH5p3o,images/covers/polaris-cover.jpg,yes,POLARIS,,
-5.5-038,KAL MEIN CHHUPA / SACH,KARIGAR,SINGLE,2024,https://open.spotify.com/album/3cVSjXPRg1Majn9PfkwmwL,images/covers/karigar-cover.jpg,yes,,,
-5.5-053,SANDESHA,HARDBONE BOY,SANDESHA EP,2024,https://open.spotify.com/album/17WhKXBK93uvb8tQAq7p8Q,images/covers/sandesha-cover.jpg,yes,,,
-5.5-005,JAANEMAN,SIHIE,SINGLE,2024,https://open.spotify.com/track/3ayhHKPT7qMaV9Dxkarw1V,images/covers/jaaneman.jpg,yes,,,
-5.5-062,PLAYER NO. 1 (DELUXE),BAGI MUNDA,PLAYER NO. 1 (DELUXE),2024,https://open.spotify.com/album/2iZEdd5JB59j8coEaSkBt1,images/covers/plno1deluxe.jpg,yes,,,
-5.5-008,DHOKEBAAZ,KARIGAR,THE FILM,2024,https://open.spotify.com/album/45sTsLLb7HHrnbkqU7TqRr,images/covers/dhokebaaz-cover-final.jpg,yes,,,
-5.5-003,NICENICE,FAIZAN,LATELY / THESE DAYS EP,2024,https://open.spotify.com/album/1OsMo1jQO4wHbq9dIdQjtB,images/covers/lately-these-days-artwork.jpg,yes,LATELY / THESE DAYS - EP,,
-5.5-066,NICENICE,FAIZAN & KRIDAY,SINGLE,2024,https://open.spotify.com/track/3cihQXkAJkMj2WnTTG52h7,images/covers/nicenice-single.webp,yes,,,
-5.5-018,CHA-CHA,SIHIE,SINGLE,2024,https://open.spotify.com/track/6NfcZkmtpoJuCQJryl7xOg,images/covers/cha-cha.jpg,yes,,,
-5.5-051,PAPER KAMA / PAPER CUTS,"SIYAAHI, REBEL 7 & NEIL C.K",SINGLE,2024,https://open.spotify.com/track/5lrxSzKvw7zLlm45lgHC1h,images/covers/pkpc-cover.jpg,yes,,,
-5.5-009,NADI,HARDBONE BOY & WOLF.CRYMAN,SINGLE,2024,https://open.spotify.com/track/1enfdnu2jpolxOt7E1Bl2R,images/covers/nadi-artwork.jpg,yes,,,
-5.5-012,AJNABEE,KARIGAR,SINGLE,2024,https://open.spotify.com/album/6LfWwvnHfgtjJ9I1Rijh4B,images/covers/ajnabee-artwork.jpg,yes,,,
-5.5-033,IN SURVEILLANCE OF ANGELS,BOYBLANCK,IN SURVEILLANCE OF ANGELS EP,2024,https://open.spotify.com/album/7HsbE8h29ePpWojzTY5hRS,images/covers/isa-cover.jpg,yes,,,
-5.5-004,DEVIL WEARS PRADA,BOYBLANCK,IN SURVEILLANCE OF ANGELS EP,2024,https://open.spotify.com/album/3C3SaH7nuF5QQoUTCGkOFm,images/covers/dwp.jpg,yes,,,
-5.5-031,HULIYA,"BAGI MUNDA, PHO & DOX",SINGLE,2024,https://open.spotify.com/track/2SuQgoVtfsnjsKXhoY5sb1,images/covers/huliya-cover.jpg,yes,,,
-5.5-042,KITNE PAISON MEIN BIKTA HAI YE PYAAR?,SIHIE,KPMBHYP? EP,2024,https://open.spotify.com/album/2TBQJqbXZ5VNPQCm3JQZLI,images/covers/kpmbhyp-cover.jpg,yes,,,
-5.5-014,ASNA,SIHIE & MAYUR KOLI,SINGLE,2024,https://open.spotify.com/album/6R6nHBkboFnvHl1nwrFBoq,images/covers/asna-cover.jpg,yes,,,
-5.5-044,KYA YEH HUA,KARIGAR,SINGLE,2024,https://open.spotify.com/album/7v8JXgyATrdtptsAVZBnH3,images/covers/kya-yeh-hua.jpg,yes,,,
-5.5-002,RAJA,BAGI MUNDA,PLAYER NO. 1 (DELUXE),2024,https://open.spotify.com/album/2iZEdd5JB59j8coEaSkBt1,images/covers/plno1deluxe.jpg,yes,PLAYER NO. 1,https://open.spotify.com/album/2lmX9UMIXTSfbp0A39zovx,images/covers/client-player-no-1.webp
-5.5-001,LDT,BAGI MUNDA,PLAYER NO. 1,2024,https://open.spotify.com/search/BAGI%20MUNDA%20LDT,images/covers/client-ldt.webp,yes,,,
-5.5-013,AKHAAN NAAL,VAT & PRAKRITI KAKAR,SINGLE,2023,https://open.spotify.com/track/3fmQzEjrid3WJ3os2wbzW0,images/covers/akhaan-naal-cover.jpg,yes,,,
-5.5-037,KAMAI,NAVRAJ HANS,SINGLE,2023,https://open.spotify.com/track/4uRYp1klW1SV6BeSSgZRm5,images/covers/kamai-new.jpg,yes,,,
-5.5-028,EVOLVING HEARTS,EZIK,EVOLVING HEARTS EP,2023,https://open.spotify.com/album/3zNOtC4cWDC6R5IkywcorP,images/covers/evolving-arts.jpg,yes,,,
-5.5-029,FALSE,VAT,SINGLE,2023,https://open.spotify.com/track/2MQMDKOcsW5LZWpcIbmXZb,images/covers/false-cover.jpg,yes,,,
-5.5-056,TANHAI,"BAGI MUNDA, FATBOI RACCOON & KARIGAR",SINGLE,2023,https://open.spotify.com/album/136aFjj0u14gWPTppHTtti,images/covers/tanhai-coverart.jpg,yes,,,
-5.5-036,KAL TAK,VAT,SINGLE,2023,https://open.spotify.com/track/1TwK0dQeVCqas3jgge2bo5,images/covers/kal-tak-artwork.jpg,yes,,,
-5.5-007,DOBAARA,DRV,POLARIS,2024,https://open.spotify.com/album/3tM5tWzzX8LZpk7iTH5p3o,images/covers/polaris-cover.jpg,no,,,
+id,title,artist,project,year,link,cover,in_catalogue,catalogue_title,catalogue_link,catalogue_cover,hue
+5.5-027,TOP FLOOR,EKKAN & MARZ,SINGLE,2026,https://open.spotify.com/track/0dEwoE9moc5sAQVLyRhXGE,images/covers/ekkan-top-floor-final-cover-4kx4k.jpg,yes,,,,1
+5.5-061,CHINTA NAHI,"FRAPPE ASH, KUMAR SANU & WHEATISH BROWN",SINGLE,2026,https://open.spotify.com/track/5sM59JbBnoOeTzsi4CIfql,images/covers/chinta-nahi.webp,yes,,,,1
+5.5-034,JHUNJHUNU DREAMS,ARIC & ANDAAZ,JHUNJHUNU DREAMS EP,2026,https://open.spotify.com/album/4awjUji0vH08QGQmGxIPpv,images/covers/jhunjhunu-dreams-final-jpg.jpg,yes,,,,2
+5.5-054,SHARABO KI TARAH,ATEN BAKSH,SINGLE,2026,https://open.spotify.com/track/0PlgoDpNfgDOS8fj4XB3GZ,images/covers/sharabo-ki-tarah.jpg,yes,,,,0
+5.5-052,NIYAT,RAZE,SINGLE,2026,https://open.spotify.com/track/5zsYvXb55y3Av7hZULr7lU,images/covers/raze-niyat-final-cover.jpg,yes,,,,3
+5.5-020,CHHORI TOXIC,URBAN POET,SINGLE,2026,https://open.spotify.com/track/3IeBd6lCKIc8y79pDbd3QX,images/covers/client-chhori-toxic.webp,yes,,,,3
+5.5-026,FIRST SIGHT,EKKAN & MARZ,SINGLE,2026,https://open.spotify.com/album/1oZsx2Pc3vjWOYKGlYyJR5,images/covers/ekkan-artwork.jpg,yes,,,,0
+5.5-048,MEHAK,KARTIK,SINGLE,2026,https://open.spotify.com/track/6gspHdgzQ4VEiMRL99RH1u,images/covers/mehak-cover-jpg.jpg,yes,,,,1
+5.5-011,12 TOLA / NAKA,VIKRODH,SINGLE (12 TOLA / NAKA),2026,https://open.spotify.com/track/6aJ4AFNOZkjt5LyKuJIyl3,images/covers/12-tol.jpg,yes,,,,1
+5.5-045,LATE NIGHT FRAPPE,FRAPPE ASH,LATE NIGHT FRAPPE (ALBUM/EP),2026,https://open.spotify.com/album/2pXzljskWl3qDVf5QxRMS2,images/covers/late-night-frappe-fnl-1.jpg,yes,,,,0
+5.5-064,KAB AUR KAHAN,FRAPPE ASH & LEONIK,SINGLE,2026,https://open.spotify.com/track/6oEd9BoWjedxn1Z6AhsjHe,images/covers/kab-aur-kahan.webp,yes,,,,2
+5.5-016,BAIRAAGI,SINASH,SINGLE,2026,https://open.spotify.com/track/57zCxL1K0LeFo0q2g7vMCM,images/covers/bairaagi-cover.jpg,yes,,,,2
+5.5-040,KAANJI KA LAAL,"FRAPPE ASH, WHEATISH BROWN & NANKU",SINGLE,2026,https://open.spotify.com/track/5OcjEmG5Rpd7SsaHkI9psW,images/covers/kkl-cover.jpg,yes,,,,3
+5.5-057,US,ARIC & ANDAAZ,JHUNJHUNU DREAMS EP,2026,https://open.spotify.com/album/4awjUji0vH08QGQmGxIPpv,images/covers/us-new.jpg,yes,,,,2
+5.5-049,NATURAL DISASTER,ITXAMRITANSH,SINGLE,2026,https://open.spotify.com/track/3DGGyzmbIaBLHIO7GyXsyr,images/covers/natural-disaster-final-w-logo.jpg,yes,,,,2
+5.5-030,GAL FUNK,URBAN POET,SINGLE,2026,https://open.spotify.com/track/2XM1Q2fxrFnKj5XywHjHWg,images/covers/gal-funk-presents.jpg,yes,,,,1
+5.5-058,WAMPINO,WAMP,WAMPINO (ALBUM),2025,https://open.spotify.com/album/5IjM8QycWxek7QQwAA18CW,images/covers/wampino-artwork.jpg,yes,,,,3
+5.5-059,ZAMANA,SINASH,SINGLE,2025,https://open.spotify.com/track/4VqI7VRsMt1TrM6eZpTx1Q,images/covers/zamana-cover.jpg,yes,,,,0
+5.5-046,LIVE FROM THE PIND,13 JEET,LIVE FROM THE PIND EP,2025,https://open.spotify.com/album/76v5kNUh58Wd8dc0Q0MGfS,images/covers/lftp-cover.jpg,yes,,,,0
+5.5-010,100KMH,13 JEET & SAVONN,LIVE FROM THE PIND EP,2025,https://open.spotify.com/album/6ttBD87Ao18kAN0Okb2Ecd,images/covers/100kmh-cover.jpg,yes,,,,1
+5.5-039,KINGSIZE,RAZE & JOKER390P,SINGLE,2025,https://open.spotify.com/album/3vovjGusrhfZPwcDcJbxmv,images/covers/kingsize-cover.jpg,yes,,,,1
+5.5-024,DOWN,KIARA CHETTRI,SINGLE,2025,https://open.spotify.com/album/6grxeBbJltUpkHbyGPPX5V,images/covers/down-cover.jpg,yes,,,,3
+5.5-017,BANDS ON BANDS,13 JEET & SAVONN,SINGLE,2025,https://open.spotify.com/album/6iQYxtDMh69MTlIQGdSn2L,images/covers/bob-cover.jpg,yes,,,,3
+5.5-025,EYE CONTACT,HARSH NUSSI & DEEP KLAIR,SINGLE,2025,https://open.spotify.com/track/3GZhBDbtJ4up24jaifgtNw,images/covers/ec-cover.jpg,yes,,,,1
+5.5-065,JAHAAZ,"URBAN POET, YUNG SAMMY & WAMP",SINGLE,2025,https://open.spotify.com/track/2L0qmhXp5tfg8jM9JU7ocP,images/covers/jahaaz.webp,yes,,,,3
+5.5-032,ICE CREAM FRAPPE,FRAPPE ASH & TOORJO DEY,ICE CREAM FRAPPE (ALBUM),2025,https://open.spotify.com/album/2IZGdcRwNgJVj3JRX5e0iL,images/covers/icf-cover.jpg,yes,,,,2
+5.5-035,JUICE,"FRAPPE ASH, TOORJO DEY & NATIQ",ICE CREAM FRAPPE (ALBUM),2025,https://open.spotify.com/track/3yqCKEWExzZGdjOTuASa6N,images/covers/juice-artwork.jpg,yes,,,,3
+5.5-060,CHATAK,TUSHAR NAGAR & STARBOIBEATZ,SINGLE,2025,https://open.spotify.com/track/73dKHHWyjTipakYvY5GR5T,images/covers/chatak.webp,yes,,,,2
+5.5-055,SHARMEELI,FRAPPE ASH & TOORJO DEY,SINGLE,2025,https://open.spotify.com/track/3a0cGrLF6Ac1QqG3PCoIDY,images/covers/sharmeeli-cover.jpg,yes,,,,2
+5.5-023,DND,URBAN POET,SINGLE,2025,https://open.spotify.com/track/5wgpJmwYY98fKBM8f5pjQT,images/covers/dnd-cover.jpg,yes,,,,2
+5.5-022,DOWN FOR ME,"FLYBOY S, D3VA & WAMP",SINGLE,2025,https://open.spotify.com/track/0IHcmnoQ6VRN4KDLzGWomN,images/covers/dfm-cover.jpg,yes,,,,0
+5.5-015,BAALMA,SINASH,SINGLE,2025,https://open.spotify.com/track/0YUKKSpxLBoKRyrBW9EzTL,images/covers/client-baalma-20261005.webp,yes,,,,2
+5.5-019,CHALE GAYE,KARIGAR,SINGLE,2025,https://open.spotify.com/track/1S6BhAt66j3rFDrbqlSet5,images/covers/chal-gaye-final-cover.jpg,yes,,,,0
+5.5-041,KAGAZ KI SADAK,SIHIE,SINGLE,2025,https://open.spotify.com/track/1NZDR17cFDz4pPlmDJ8n0K,images/covers/kks-cover.jpg,yes,,,,0
+5.5-043,KUTTA,KARIGAR,SINGLE,2025,https://open.spotify.com/track/6uraa3kUgEZG8w0gG8wkPG,images/covers/kutta-cover.jpg,yes,,,,2
+5.5-050,ONE FROM THE CROWD,DOX,ONE FROM THE CROWD EP,2025,https://open.spotify.com/album/5KOxI4N3j6nWS1OiEUm8Ab,images/covers/one-from-the-crowd-artwork.jpg,yes,,,,1
+5.5-047,LAW OF ATTRACTION,SIHIE & FATBOI RACCOON,SINGLE,2025,https://open.spotify.com/track/1J8YfmfernoOLG03opyHtd,images/covers/loa-cover.jpg,yes,,,,3
+5.5-021,CULTURE TIES,URBAN POET,CULTURE TIES EP,2025,https://open.spotify.com/album/3FJ73JabP50rP2tp8GCaZv,images/covers/culture-ties-cover.jpg,yes,,,,1
+5.5-063,PARTY MEI AA (RAA-MIX),DRV & RAFTAAR,SINGLE,2024,https://open.spotify.com/track/5bHMrc3XDM6OJ4CPqvX8et,images/covers/party-mei-aa-raa-mix.webp,yes,,,,1
+5.5-006,RAAT KHATAM,DRV,POLARIS,2024,https://open.spotify.com/album/3tM5tWzzX8LZpk7iTH5p3o,images/covers/polaris-cover.jpg,yes,POLARIS,,,1
+5.5-038,KAL MEIN CHHUPA / SACH,KARIGAR,SINGLE,2024,https://open.spotify.com/album/3cVSjXPRg1Majn9PfkwmwL,images/covers/karigar-cover.jpg,yes,,,,0
+5.5-053,SANDESHA,HARDBONE BOY,SANDESHA EP,2024,https://open.spotify.com/album/17WhKXBK93uvb8tQAq7p8Q,images/covers/sandesha-cover.jpg,yes,,,,0
+5.5-005,JAANEMAN,SIHIE,SINGLE,2024,https://open.spotify.com/track/3ayhHKPT7qMaV9Dxkarw1V,images/covers/jaaneman.jpg,yes,,,,0
+5.5-062,PLAYER NO. 1 (DELUXE),BAGI MUNDA,PLAYER NO. 1 (DELUXE),2024,https://open.spotify.com/album/2iZEdd5JB59j8coEaSkBt1,images/covers/plno1deluxe.jpg,yes,,,,0
+5.5-008,DHOKEBAAZ,KARIGAR,THE FILM,2024,https://open.spotify.com/album/45sTsLLb7HHrnbkqU7TqRr,images/covers/dhokebaaz-cover-final.jpg,yes,,,,3
+5.5-003,NICENICE,FAIZAN,LATELY / THESE DAYS EP,2024,https://open.spotify.com/album/1OsMo1jQO4wHbq9dIdQjtB,images/covers/lately-these-days-artwork.jpg,yes,LATELY / THESE DAYS - EP,,,2
+5.5-066,NICENICE,FAIZAN & KRIDAY,SINGLE,2024,https://open.spotify.com/track/3cihQXkAJkMj2WnTTG52h7,images/covers/nicenice-single.webp,yes,,,,0
+5.5-018,CHA-CHA,SIHIE,SINGLE,2024,https://open.spotify.com/track/6NfcZkmtpoJuCQJryl7xOg,images/covers/cha-cha.jpg,yes,,,,1
+5.5-051,PAPER KAMA / PAPER CUTS,"SIYAAHI, REBEL 7 & NEIL C.K",SINGLE,2024,https://open.spotify.com/track/5lrxSzKvw7zLlm45lgHC1h,images/covers/pkpc-cover.jpg,yes,,,,3
+5.5-009,NADI,HARDBONE BOY & WOLF.CRYMAN,SINGLE,2024,https://open.spotify.com/track/1enfdnu2jpolxOt7E1Bl2R,images/covers/nadi-artwork.jpg,yes,,,,0
+5.5-012,AJNABEE,KARIGAR,SINGLE,2024,https://open.spotify.com/album/6LfWwvnHfgtjJ9I1Rijh4B,images/covers/ajnabee-artwork.jpg,yes,,,,3
+5.5-033,IN SURVEILLANCE OF ANGELS,BOYBLANCK,IN SURVEILLANCE OF ANGELS EP,2024,https://open.spotify.com/album/7HsbE8h29ePpWojzTY5hRS,images/covers/isa-cover.jpg,yes,,,,3
+5.5-004,DEVIL WEARS PRADA,BOYBLANCK,IN SURVEILLANCE OF ANGELS EP,2024,https://open.spotify.com/album/3C3SaH7nuF5QQoUTCGkOFm,images/covers/dwp.jpg,yes,,,,3
+5.5-031,HULIYA,"BAGI MUNDA, PHO & DOX",SINGLE,2024,https://open.spotify.com/track/2SuQgoVtfsnjsKXhoY5sb1,images/covers/huliya-cover.jpg,yes,,,,2
+5.5-042,KITNE PAISON MEIN BIKTA HAI YE PYAAR?,SIHIE,KPMBHYP? EP,2024,https://open.spotify.com/album/2TBQJqbXZ5VNPQCm3JQZLI,images/covers/kpmbhyp-cover.jpg,yes,,,,1
+5.5-014,ASNA,SIHIE & MAYUR KOLI,SINGLE,2024,https://open.spotify.com/album/6R6nHBkboFnvHl1nwrFBoq,images/covers/asna-cover.jpg,yes,,,,0
+5.5-044,KYA YEH HUA,KARIGAR,SINGLE,2024,https://open.spotify.com/album/7v8JXgyATrdtptsAVZBnH3,images/covers/kya-yeh-hua.jpg,yes,,,,2
+5.5-002,RAJA,BAGI MUNDA,PLAYER NO. 1 (DELUXE),2024,https://open.spotify.com/album/2iZEdd5JB59j8coEaSkBt1,images/covers/plno1deluxe.jpg,yes,PLAYER NO. 1,https://open.spotify.com/album/2lmX9UMIXTSfbp0A39zovx,images/covers/client-player-no-1.webp,1
+5.5-001,LDT,BAGI MUNDA,PLAYER NO. 1,2024,https://open.spotify.com/search/BAGI%20MUNDA%20LDT,images/covers/client-ldt.webp,yes,,,,0
+5.5-013,AKHAAN NAAL,VAT & PRAKRITI KAKAR,SINGLE,2023,https://open.spotify.com/track/3fmQzEjrid3WJ3os2wbzW0,images/covers/akhaan-naal-cover.jpg,yes,,,,1
+5.5-037,KAMAI,NAVRAJ HANS,SINGLE,2023,https://open.spotify.com/track/4uRYp1klW1SV6BeSSgZRm5,images/covers/kamai-new.jpg,yes,,,,1
+5.5-028,EVOLVING HEARTS,EZIK,EVOLVING HEARTS EP,2023,https://open.spotify.com/album/3zNOtC4cWDC6R5IkywcorP,images/covers/evolving-arts.jpg,yes,,,,2
+5.5-029,FALSE,VAT,SINGLE,2023,https://open.spotify.com/track/2MQMDKOcsW5LZWpcIbmXZb,images/covers/false-cover.jpg,yes,,,,3
+5.5-056,TANHAI,"BAGI MUNDA, FATBOI RACCOON & KARIGAR",SINGLE,2023,https://open.spotify.com/album/136aFjj0u14gWPTppHTtti,images/covers/tanhai-coverart.jpg,yes,,,,2
+5.5-036,KAL TAK,VAT,SINGLE,2023,https://open.spotify.com/track/1TwK0dQeVCqas3jgge2bo5,images/covers/kal-tak-artwork.jpg,yes,,,,0
+5.5-007,DOBAARA,DRV,POLARIS,2024,https://open.spotify.com/album/3tM5tWzzX8LZpk7iTH5p3o,images/covers/polaris-cover.jpg,no,,,,2
