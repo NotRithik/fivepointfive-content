@@ -1,0 +1,21 @@
+{
+  "site_name": "5.5 Records",
+  "contact_email": "info@fivepointfiverecords.com",
+  "logo_light": "images/logo-trim.png",
+  "logo_dark": "images/logo-ink.png",
+  "wall_artwork": "images/certified-bangers-only.png",
+  "new_releases_label": "images/img/marker-new-releases.png",
+  "catalogue_label": "images/img/marker-catalog.png",
+  "contact": {
+    "enabled": true,
+    "provider": "formspark",
+    "endpoint": "https://submit-form.com/uZREl2x7J",
+    "notificationsEnabled": true
+  },
+  "newsletter": {
+    "enabled": false,
+    "heading": "Join the mailing list.",
+    "description": "New releases and news from 5.5 Records.",
+    "endpoint": ""
+  }
+}

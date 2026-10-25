@@ -1,0 +1,13 @@
+{
+  "name": "fivepointfive-content",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node scripts/build.mjs --check",
+    "test": "node --test scripts/schema.test.mjs",
+    "build": "node scripts/build.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

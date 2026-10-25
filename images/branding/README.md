@@ -1,0 +1,1 @@
+Upload replacement public logo or wall-art PNG/JPG/WebP images here. Set their paths in content/settings.json. The existing approved images are already included elsewhere under images/. No fonts or private files.
