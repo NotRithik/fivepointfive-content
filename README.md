@@ -20,7 +20,28 @@ This is a **public** repository. Put only information and images that may appear
 | Email address, logos, wall artwork and public form settings | [content/settings.json](content/settings.json) |
 | Uploaded covers, product pictures and branding | [images/](images/) |
 
-The repo starts with the content from the approved website. There are 5 current artists, 62 alumni, 65 visible catalogue entries, 7 homepage records, 5 shelf picks and 2 products. These are starting counts, not fixed catalogue/shop counts.
+The files contain the website content. The catalogue and shop can grow independently of the seven homepage slots and five shelf slots.
+
+## Ask an AI assistant to help, even without GitHub tools
+
+You can ask a text-only assistant to prepare the edit, then paste it into GitHub yourself. It does not need access to your account.
+
+Copy this README into the chat, or send the repository link if the assistant can open public pages. **If it cannot open the link, paste the README and the complete relevant content file(s)**, including the first/header line. Do not send account passwords or access tokens.
+
+Use this prompt:
+
+> I manage the 5.5 Records website. Follow the instructions in this README. I will edit GitHub manually; do not assume you can read or write the repository. I want to: [describe the change]. First tell me exactly which file contents and item details you need me to paste. Once you have them, return the exact filename and complete replacement file in a copyable code block, plus the GitHub steps to save it. Preserve every unrelated row and its order. Do not invent links, release IDs, prices, photos or musical editions. Do not say the website is updated: I still need to commit the edit and get the green publish check.
+
+Examples of what to ask:
+
+- “Add this artist to Current, between these two names. Here is the exact Spotify link.” Paste `current-artists.csv`.
+- “Add this single to the catalogue and put it first in the homepage crate.” Paste `releases.csv` and `new-releases.csv`; give the title, credits, year, release link, uploaded cover path and exact audio URL. When the crate is full, say which old homepage selection to remove.
+- “Add this product with these two photos, and put it second.” Paste `shop.csv`; give its name, rupee price, checkout URL and image paths. Upload the pictures yourself before committing a row that references them.
+- “Remove this release everywhere.” Paste `releases.csv`, `new-releases.csv` and `shelf.csv` so the assistant can remove references safely.
+
+For a one-line change, the assistant may instead return the **exact old row and exact new row** after reading the current file. A vague description, a Markdown table or a shortened file with `...` is not a replacement CSV. Never paste ellipses over existing rows.
+
+After the assistant prepares the content, you still perform the five GitHub steps above. If the publish check is red, copy its error text and the edited file back into the chat and ask for a correction. Text-only assistants can guide these steps, but cannot verify a live change without seeing the result.
 
 ## Make a normal edit in GitHub
 
@@ -127,11 +148,11 @@ Use a new filename for a replacement and update the row. That avoids confusing c
 
 `settings.json` contains the public contact email, light/dark logo paths, the wall artwork, handwritten crate/catalogue label images, and the contact/newsletter settings. Keep the quotes, braces and commas. The email is a public **mailto** address; changing it does **not** change where Formspark sends notifications.
 
-The contact form currently uses the existing working Formspark submission URL. When handing over, create the client's own form and replace `contact.endpoint` with its public `https://submit-form.com/...` URL. Notification recipients and delivery settings are controlled inside the client's Formspark account, not by this repository. Do not paste the dashboard URL or any API key here. `contact.enabled=false` disables submission while preserving the direct email link.
+The contact form uses the Formspark submission URL in `contact.endpoint`. To use another inbox, create or select your Formspark form and put its public `https://submit-form.com/...` URL here. Notification recipients and delivery settings are controlled inside your Formspark account, not by this repository. Do not paste the dashboard URL or any API key here. `contact.enabled=false` disables submission while preserving the direct email link.
 
-The newsletter starts **disabled**, matching the current website. To enable it, create a separate Formspark form for newsletter signups, put its public submission URL in `newsletter.endpoint`, and change `newsletter.enabled` to `true`. Keep the newsletter separate from the contact form. The signup collects addresses; it does **not** send newsletter campaigns. Test a real signup and the destination inbox with the client before announcing it. `heading` and `description` control the visible newsletter text.
+Newsletter signup is disabled until you configure and enable it. To enable it, create a separate Formspark form for newsletter signups, put its public submission URL in `newsletter.endpoint`, and change `newsletter.enabled` to `true`. Keep the newsletter separate from the contact form. The signup collects addresses; it does **not** send newsletter campaigns. Check that a real signup reaches your intended inbox before announcing it. `heading` and `description` control the visible newsletter text.
 
-The room geometry, animations, camera positions, checkout provider and music-player implementation are website code—not editable content. Their redesign requires a developer. This repository does not silently enable new services, buy anything or transfer ownership.
+The room geometry, animations, camera positions, checkout provider and music-player implementation are website code—not editable content. Their redesign requires a developer. Changing content does not change your hosting account or checkout service.
 
 ## CSV punctuation and mistakes
 
@@ -140,14 +161,6 @@ Keep the header exactly as it is. Commas separate columns. **Commas inside a tit
 The checker catches wrong columns, bad quotes, duplicate IDs, unknown release references, missing uploaded pictures, invalid prices, unsafe URLs and overfilled physical displays. It publishes one complete snapshot only after everything passes. It does not fact-check artist credits or choose the correct musical edition for you.
 
 To undo a mistake, use the file's **History** to find the earlier content, copy it back into the file, and commit. Revert all affected content files together when undoing a multi-file change. The same validation/publication process runs again.
-
-## Transfer to Akshar later
-
-The current owner can use **Settings → General → Danger Zone → Transfer ownership** once Akshar supplies his GitHub username and accepts the transfer. Do not create another repo at the old address afterward: that can break GitHub's old-location redirects.
-
-No personal access token or Vercel secret is needed for normal content publishing. The GitHub workflow uses its own short-lived repository token. Keep this repo public, Actions enabled, and the `main` and `published` branches intact. If Akshar's organisation restricts workflow write permissions, its administrator must allow this publisher to write the `published` branch.
-
-After transfer, make a harmless README edit and confirm the publish run and live website still work. The website records this repo's permanent numeric ID as a recovery route if the raw URL moves. Update its one `public/data/content-source.json` URL to the new owner location during handover as well; that is a one-time developer configuration change, not a normal editing requirement. GitHub Pages is not used.
 
 ## How it works / developer notes
 
@@ -162,6 +175,5 @@ node --test scripts/schema.test.mjs
 node scripts/build.mjs --check
 ```
 
-The publishing workflow deliberately does not run on edits to `published`; it cannot loop. Pull requests only validate. Only an accepted main-branch commit may publish. The website's base domain, hosting and Formspark inbox ownership remain separate from ownership of this content repository.
+The publishing workflow deliberately does not run on edits to `published`; it cannot loop. Pull requests only validate. Only an accepted main-branch commit may publish. Domain, hosting and Formspark inbox settings are managed in their respective services.
 
-Official transfer reference: https://docs.github.com/en/repositories/creating-and-managing-repositories/transferring-a-repository
