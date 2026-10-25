@@ -1,179 +1,59 @@
-# Edit the 5.5 Records website
+# Update the 5.5 Records website
 
-This is the **content cupboard** for [fivepointfiverecords.com](https://www.fivepointfiverecords.com). Edit the files here to change artists, records, artwork, products, prices and public contact details. You do not need to edit the website code or deploy it again.
+Edit the files here to update [fivepointfiverecords.com](https://www.fivepointfiverecords.com). **Row order = website order.** Move a whole row up or down to move that item. No website-code changes or redeployment are needed.
 
-**The order of rows is the order on the website.** First row means first item. Move a whole row up or down to change the order. The website does not re-sort your names alphabetically or your records by date.
+## Which file do I edit?
 
-This is a **public** repository. Put only information and images that may appear on the public website here. Never upload passwords, API keys, customer messages, subscriber addresses, private agreements or payment details.
-
-## Where to make each change
-
-| Change on the website | File to edit |
+| What to change | File |
 | --- | --- |
-| Current artists, in the room and Index | [content/current-artists.csv](content/current-artists.csv) |
-| Alumni artists, in the room and Index | [content/alumni-artists.csv](content/alumni-artists.csv) |
-| Complete release catalogue: titles, artist credits, covers and links | [content/releases.csv](content/releases.csv) |
-| Front-page record sleeves, New Releases in the Index, and playable music selection | [content/new-releases.csv](content/new-releases.csv) |
-| The record covers on the wall shelf | [content/shelf.csv](content/shelf.csv) |
-| CRT shop and Index shop: products, prices, buy links and photos | [content/shop.csv](content/shop.csv) |
-| Social accounts, links and their order | [content/socials.csv](content/socials.csv) |
-| Email address, logos, wall artwork and public form settings | [content/settings.json](content/settings.json) |
-| Uploaded covers, product pictures and branding | [images/](images/) |
+| Current artist names and Spotify links | [current-artists.csv](content/current-artists.csv) |
+| Alumni names and Spotify links | [alumni-artists.csv](content/alumni-artists.csv) |
+| Catalogue titles, artist credits, years, covers and release links | [releases.csv](content/releases.csv) |
+| Front-page sleeves, New Releases and playable tracks | [new-releases.csv](content/new-releases.csv) |
+| Covers on the wall shelf | [shelf.csv](content/shelf.csv) |
+| Shop names, rupee prices, buy links and photos | [shop.csv](content/shop.csv) |
+| Social accounts and their order | [socials.csv](content/socials.csv) |
+| Email, logos, wall artwork and form settings | [settings.json](content/settings.json) |
 
-The files contain the website content. The catalogue and shop can grow independently of the seven homepage slots and five shelf slots.
+## Save a change
 
-## Ask an AI assistant to help, even without GitHub tools
+1. Open the file and click the **pencil / Edit** button.
+2. Edit, add, remove or move a row. **Keep the first/header line unchanged.**
+3. Click **Commit changes** and save to **main**.
+4. Open **Actions**. Wait for the newest **Check and publish content** run to turn green, then refresh the website.
 
-You can ask a text-only assistant to prepare the edit, then paste it into GitHub yourself. It does not need access to your account.
+Publishing and caching can take a few minutes. A red check explains what needs fixing; the website keeps its last good content. For several related file changes, use one branch and pull request, then merge them together.
 
-Copy this README into the chat, or send the repository link if the assistant can open public pages. **If it cannot open the link, paste the README and the complete relevant content file(s)**, including the first/header line. Do not send account passwords or access tokens.
+## Common changes
 
-Use this prompt:
+**Add an artist:** add their name and exact Spotify artist link to the Current or Alumni file. `genre` is optional. Remove the row to remove the name.
 
-> I manage the 5.5 Records website. Follow the instructions in this README. I will edit GitHub manually; do not assume you can read or write the repository. I want to: [describe the change]. First tell me exactly which file contents and item details you need me to paste. Once you have them, return the exact filename and complete replacement file in a copyable code block, plus the GitHub steps to save it. Preserve every unrelated row and its order. Do not invent links, release IDs, prices, photos or musical editions. Do not say the website is updated: I still need to commit the edit and get the green publish check.
+**Add a release:** add its details to `releases.csv` with a new, unused `id`. Set `in_catalogue` to `yes`. To feature it on the homepage, also add that ID to `new-releases.csv`; to put it on the shelf, add it to `shelf.csv`. Homepage and shelf order come from their own files, independently of catalogue order.
 
-Examples of what to ask:
+**Homepage music:** `youtube` is the exact official YouTube/YouTube Music audio URL. `playback_title` is optional. A blank audio URL links out to the release instead. Check new tracks in the player: some videos cannot be embedded.
 
-- “Add this artist to Current, between these two names. Here is the exact Spotify link.” Paste `current-artists.csv`.
-- “Add this single to the catalogue and put it first in the homepage crate.” Paste `releases.csv` and `new-releases.csv`; give the title, credits, year, release link, uploaded cover path and exact audio URL. When the crate is full, say which old homepage selection to remove.
-- “Add this product with these two photos, and put it second.” Paste `shop.csv`; give its name, rupee price, checkout URL and image paths. Upload the pictures yourself before committing a row that references them.
-- “Remove this release everywhere.” Paste `releases.csv`, `new-releases.csv` and `shelf.csv` so the assistant can remove references safely.
+**Display space:** the front crate has **7 slots** and the shelf has **5**. Replace or remove a selection when full. Removing a selection does not delete its catalogue entry. To delete a release entirely, also remove its ID from both selection files.
 
-For a one-line change, the assistant may instead return the **exact old row and exact new row** after reading the current file. A vague description, a Markdown table or a shortened file with `...` is not a replacement CSV. Never paste ellipses over existing rows.
+**Shop:** one product per row. `price` uses rupees as digits, such as `899` or `899.50`. `link` is the checkout URL. Separate multiple picture paths with `|`, in the order they should appear. Extra products create more shop pages.
 
-After the assistant prepares the content, you still perform the five GitHub steps above. If the publish check is red, copy its error text and the edited file back into the chat and ask for a correction. Text-only assistants can guide these steps, but cannot verify a live change without seeing the result.
+**Pictures:** open [images/](images/) → **Add file → Upload files**. Use JPG, PNG or WebP. Commit the picture first, then put its path in the content file, for example `images/merch/new-shirt.jpg`. Use a new filename for replacement artwork. Direct HTTPS image URLs also work when the image host allows cross-origin use; uploading here is more reliable.
 
-## Make a normal edit in GitHub
+**Email and forms:** the public email address is in `settings.json`. Form notification recipients are set in Formspark, not by changing that email. Contact and newsletter use separate public `https://submit-form.com/...` URLs. Newsletter signup stays disabled until configured and enabled; it collects addresses, not newsletter campaigns.
 
-1. Open the file from the table above. Click the **pencil / Edit this file** button. You must be signed into an account with write access. If you cannot see Edit, ask the repository owner to give you access.
-2. Change the relevant row. Keep the first/header row unchanged. Add a new item by copying the shape of another row; remove an item by deleting its whole row.
-3. Click **Commit changes**, add a short description such as “Add new single”, and commit to **main**.
-4. Open the repo's **Actions** tab. The newest **Check and publish content** run must have a green tick. Red means something needs fixing; click the failed run to see the filename and reason.
-5. Refresh the website. The publish job and GitHub's raw-file cache can introduce a delay of a few minutes. An already-open website keeps its current content until reloaded so records do not disappear halfway through playback.
+## Get help from a text-only AI
 
-**A red check does not replace the live content.** Fix the error and commit again. For a change touching several files, use a branch and pull request so all the edits are checked and published together. The green check on the pull request checks the content; merging it into main publishes it.
+Send the assistant this README or the repository link. **If it cannot open links, paste this README and the full relevant file(s), including their header lines.** It can prepare the text while you make the GitHub edit.
 
-## Artists: add, remove or move a name
+Copy this prompt:
 
-The two artist files have the same columns:
+> Help me update the 5.5 Records content using this README. I want to: [describe the change]. I will edit GitHub myself. Ask me for the current file contents and any missing names, links, prices or pictures. Then give me the exact filename, complete replacement text, and short save instructions. Keep unrelated rows and their order. Do not invent details or claim you have saved anything.
 
-```csv
-name,genre,link
-ARTIST NAME,Hip-Hop,https://open.spotify.com/artist/EXACT_ARTIST_ID
-```
+For a new homepage release, paste `releases.csv` and `new-releases.csv`. For a shop change, paste `shop.csv`. To remove a release everywhere, paste all three release/selection files. Upload images yourself before saving rows that reference them.
 
-`name` is the displayed name. `genre` is optional. `link` is the artist's exact Spotify page; paste the link copied from Spotify. Use one artist per row. No artist portraits are needed.
+## Avoid common mistakes
 
-To move an artist from Current to Alumni, move their whole row between the two files. For a clean single publication, make both edits on one branch and merge them together. Names keep the order in each file. The physical roster currently supports up to 20 Current and 200 Alumni names; the print automatically fits the list, so very large lists use smaller type.
+Keep IDs unique and unchanged. Put quotes around a field containing commas: `"ARTIST ONE, ARTIST TWO"`. Inside quoted text, double a quote: `"A ""Special"" Release"`. Do not paste Markdown tables or `...` into a CSV. Empty optional fields are fine.
 
-## Catalogue: add a release once
+This repository is public. **Never upload passwords, secret keys, customer messages or subscriber lists.** Edit `content/` and `images/`; leave `scripts/`, `.github/` and the generated `published` branch alone.
 
-Open `content/releases.csv`. Each release has a permanent `id`, such as `5.5-067`. Choose a new unused ID and do not change the ID later; the homepage and shelf refer to it.
-
-| Column | What goes here |
-| --- | --- |
-| `id` | Unique permanent ID, using letters, numbers, hyphens or dots. |
-| `title` | The record/track title. |
-| `artist` | The artist credit. Put quotes around credits containing commas. |
-| `project` | The album/EP name, or `SINGLE`. |
-| `year` | Four digits, such as `2026`. |
-| `link` | The public destination for the record, usually its Spotify track or album. |
-| `cover` | Image path such as `images/covers/new-single.jpg`. |
-| `in_catalogue` | `yes` shows it in the catalogue. `no` keeps the row available for homepage/shelf selection but hides it from the catalogue. |
-| `catalogue_title` | Optional: a different catalogue title. Leave blank to use `title`. |
-| `catalogue_link` | Optional: a different catalogue destination, e.g. the whole album. |
-| `catalogue_cover` | Optional: different artwork specifically for the catalogue. |
-| `hue` | Optional fallback sleeve colour: 0 red, 1 white, 2 dark, 3 grey. Keep the existing value, or leave blank for a new record. Real cover artwork takes precedence. |
-
-Example shape — replace these example values with your real release and uploaded image:
-
-```csv
-5.5-NEW,NEW SINGLE,"ARTIST ONE, ARTIST TWO",SINGLE,2026,https://open.spotify.com/track/REPLACE_ME,images/covers/new-single.jpg,yes,,,,
-```
-
-Move the row to where the cover should appear. The All view follows the file from top to bottom. Year/search filters only hide non-matching items; they do not change the order. To get a clean year section, keep rows for the same year together. Moving a row between years does not silently change its `year` value.
-
-To remove a release completely, first remove any references to its ID from `new-releases.csv` and `shelf.csv`, then remove its `releases.csv` row. Otherwise the checker will tell you which reference is broken. To hide only its catalogue entry, use `in_catalogue=no` instead.
-
-## Front-page sleeves and music
-
-`content/new-releases.csv` chooses the front crate and Index's New Releases. It has **up to 7 physical slots**. Replace an existing row when all seven are occupied; the complete catalogue can keep growing independently.
-
-```csv
-release_id,youtube,playback_title
-5.5-061,https://music.youtube.com/watch?v=lU36RsYI23I,
-```
-
-Use an ID already in `releases.csv`. Its title, artist, link and cover come from that release. The row order is the sleeve order and the player's previous/next order. The catalogue row can be anywhere; it does not control this display.
-
-`youtube` is the exact official audio/YouTube Music URL for in-site playback. Use the same edition/track as the sleeve. `playback_title` is optional and useful when an EP cover plays one representative song. The existing selected audio editions have been preserved. A blank YouTube value makes the selection link out to the release instead of claiming in-site playback. The checker validates the URL format, not availability, licensing or provider permission. Check a new track in the actual player; some videos cannot be embedded.
-
-Removing a row takes it out of the front crate and playback queue, not out of the full catalogue. Leaving only the header makes the crate/queue empty; the site must not silently restore old selections.
-
-## Shelf covers
-
-`content/shelf.csv` has **up to 5 physical slots**:
-
-```csv
-release_id,title,cover,link
-5.5-050,SUPERSTAR,,
-```
-
-Use an existing release ID. `title`, `cover` and `link` are optional display overrides; blank means use the release's value. For example, a shelf can show a different cover without changing the catalogue. Rows run left-to-right on the shelf. Removing a row removes that shelf cover, not the underlying release.
-
-## Shop products and photo order
-
-```csv
-id,name,price,link,images
-TEE-NEW,NEW T-SHIRT,899,https://YOUR_CHECKOUT_LINK,images/merch/tee-front.jpg|images/merch/tee-back.jpg
-```
-
-`id` is unique to that product. `name` is the visible name. `price` is in Indian rupees: use `899` or `899.50`, not a currency symbol or thousands separator. `link` is the exact HTTPS purchase/checkout destination. **The website does not process payments itself.**
-
-Put one or more images in `images`, separated with `|`. Their order controls the photo rotation; the first photo is shown first. Up to 12 photos per product are supported. Both the CRT and Index read the same product rows, two items per page, in file order. Add more rows to create more shop pages. Delete a row to stop displaying a product. An empty file with just its header means an empty shop, not the old default products.
-
-## Upload pictures
-
-Open `images/covers/`, `images/merch/` or `images/branding/` and choose **Add file → Upload files**. Use JPG, PNG or WebP. Simple names such as `new-single-cover.jpg` are easiest. Keep artwork square for record covers; product pictures may be rectangular.
-
-Commit the image **before** referencing it from a content file, or put both changes in one branch. In the CSV use the path shown in this repo, e.g. `images/merch/tee-front.jpg`—not a GitHub `/blob/` page URL. The publish job turns this into a versioned direct image URL automatically.
-
-A direct external `https://...jpg/png/webp` image link can also be used. It must return the picture itself and allow cross-origin image use for the 3D canvas; a Google Drive sharing page or a normal website page is not an image. **Uploading here is the reliable option.** The checker confirms uploaded files exist, but cannot guarantee external-image availability or CORS. Large images slow loading; 1000–1600 pixels square is normally enough for a cover. The hard limit is 15 MB per image.
-
-Use a new filename for a replacement and update the row. That avoids confusing cached artwork and makes rollback easier. Deleting a referenced image fails validation. You do not need to upload fonts, 3D models or the entire website project.
-
-## Contact, social links, branding and newsletter
-
-`socials.csv` controls the order and destinations of up to six social links. Use `INSTAGRAM`, `YOUTUBE` or `X` for their familiar icons; another short label gets a text link. Removing a row removes that social link.
-
-`settings.json` contains the public contact email, light/dark logo paths, the wall artwork, handwritten crate/catalogue label images, and the contact/newsletter settings. Keep the quotes, braces and commas. The email is a public **mailto** address; changing it does **not** change where Formspark sends notifications.
-
-The contact form uses the Formspark submission URL in `contact.endpoint`. To use another inbox, create or select your Formspark form and put its public `https://submit-form.com/...` URL here. Notification recipients and delivery settings are controlled inside your Formspark account, not by this repository. Do not paste the dashboard URL or any API key here. `contact.enabled=false` disables submission while preserving the direct email link.
-
-Newsletter signup is disabled until you configure and enable it. To enable it, create a separate Formspark form for newsletter signups, put its public submission URL in `newsletter.endpoint`, and change `newsletter.enabled` to `true`. Keep the newsletter separate from the contact form. The signup collects addresses; it does **not** send newsletter campaigns. Check that a real signup reaches your intended inbox before announcing it. `heading` and `description` control the visible newsletter text.
-
-The room geometry, animations, camera positions, checkout provider and music-player implementation are website code—not editable content. Their redesign requires a developer. Changing content does not change your hosting account or checkout service.
-
-## CSV punctuation and mistakes
-
-Keep the header exactly as it is. Commas separate columns. **Commas inside a title/name are allowed when the whole field is quoted**, e.g. `"FRAPPE ASH, KUMAR SANU & WHEATISH BROWN"`. Inside a quoted field, write a double quote twice: `"A ""Special"" Release"`. Blank optional columns stay as commas. Do not add Markdown tables or bullet points inside a CSV.
-
-The checker catches wrong columns, bad quotes, duplicate IDs, unknown release references, missing uploaded pictures, invalid prices, unsafe URLs and overfilled physical displays. It publishes one complete snapshot only after everything passes. It does not fact-check artist credits or choose the correct musical edition for you.
-
-To undo a mistake, use the file's **History** to find the earlier content, copy it back into the file, and commit. Revert all affected content files together when undoing a multi-file change. The same validation/publication process runs again.
-
-## How it works / developer notes
-
-Edit only `content/` and `images/` for routine changes. `scripts/` and `.github/` validate and publish; leave them alone. The `published` branch's `content.json` is generated—**do not edit that branch by hand**.
-
-On a successful main-branch commit, the workflow compiles the CSV/JSON into one snapshot. Image URLs point to that exact source commit, preventing mixed old/new artwork. The website fetches the published snapshot when opened. If GitHub is unavailable, it uses a previously validated browser copy or its bundled last-known version; that may be older, but keeps the site usable. No private GitHub token is included in the browser.
-
-Local checks need Node.js 20+ and no installed dependencies:
-
-```sh
-node --test scripts/schema.test.mjs
-node scripts/build.mjs --check
-```
-
-The publishing workflow deliberately does not run on edits to `published`; it cannot loop. Pull requests only validate. Only an accepted main-branch commit may publish. Domain, hosting and Formspark inbox settings are managed in their respective services.
-
+Need a column explained? See the [field reference](docs/FIELDS.md). AI agents with tools should also read [AGENTS.md](AGENTS.md).
