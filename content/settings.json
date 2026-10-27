@@ -9,13 +9,13 @@
   "contact": {
     "enabled": true,
     "provider": "formspark",
-    "endpoint": "https://submit-form.com/uZREl2x7J",
+    "endpoint": "https://submit-form.com/yrzLW2ES6",
     "notificationsEnabled": true
   },
   "newsletter": {
-    "enabled": false,
+    "enabled": true,
     "heading": "Join the mailing list.",
     "description": "New releases and news from 5.5 Records.",
-    "endpoint": ""
+    "endpoint": "https://submit-form.com/NCZ44fbca"
   }
 }
