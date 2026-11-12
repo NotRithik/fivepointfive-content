@@ -18,8 +18,11 @@ jobs:
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: '24'
-      - run: node --test scripts/schema.test.mjs
-      - run: node scripts/build.mjs
+      # The editor-facing check runs first so its plain message is the one shown.
+      - name: Check the content files
+        run: node scripts/build.mjs --check
+      - name: Test the checker itself
+        run: node --test scripts/schema.test.mjs
   publish:
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     needs: check

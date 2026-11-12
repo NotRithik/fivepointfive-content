@@ -83,7 +83,7 @@ Put one or more images in `images`, separated with `|`. Their order controls the
 
 ## Upload pictures
 
-Open `images/covers/`, `images/merch/` or `images/branding/` and choose **Add file → Upload files**. Use JPG, PNG or WebP. Simple names such as `new-single-cover.jpg` are easiest. Keep artwork square for record covers; product pictures may be rectangular.
+Open `images/covers/`, `images/merch/` or `images/branding/` and choose **Add file → Upload files**. Use JPG, PNG or WebP. Simple names such as `new-single-cover.jpg` are easiest. In the CSV, write the name exactly as it appears in the folder; capital letters must match, and a space can stay a space. Keep artwork square for record covers; product pictures may be rectangular.
 
 Commit the image **before** referencing it from a content file, or put both changes in one branch. In the CSV use the path shown in this repo, e.g. `images/merch/tee-front.jpg`—not a GitHub `/blob/` page URL. The publish job turns this into a versioned direct image URL automatically.
 
@@ -109,5 +109,5 @@ Keep the header exactly as it is. Commas separate columns. **Commas inside a tit
 
 The checker catches wrong columns, bad quotes, duplicate IDs, unknown release references, missing uploaded pictures, invalid prices, unsafe URLs and overfilled physical displays. It publishes one complete snapshot only after everything passes. It does not fact-check artist credits or choose the correct musical edition for you.
 
-To undo a mistake, use the file's **History** to find the earlier content, copy it back into the file, and commit. Revert all affected content files together when undoing a multi-file change. The same validation/publication process runs again.
+If a check fails, fix the first problem it names: the check reads every file, so later saves keep failing until that one is fixed. To undo a mistake, use the file's **History** to find the earlier content, copy it back into the file, and commit. Revert all affected content files together when undoing a multi-file change. The same validation/publication process runs again.
 

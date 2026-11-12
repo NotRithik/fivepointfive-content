@@ -22,7 +22,7 @@ Edit these files to update [fivepointfiverecords.com](https://www.fivepointfiver
 3. Click **Commit changes** → save to **main**.
 4. Open **Actions**. When **Check and publish content** is green, refresh the website.
 
-Publishing can take a few minutes. Each new page load checks the published commit for changes; refresh an open page to apply them. A red check explains the error; the website keeps its last good content. Save related changes together using a branch and pull request.
+Publishing can take a few minutes. Each new page load checks the published commit for changes; refresh an open page to apply them. A red cross means nothing was published: open it and read **Content not published** for the file and row to fix. Until that one problem is fixed, every later save also gets a red cross, even saves to other files. The website keeps its last good content. Save related changes together using a branch and pull request.
 
 ## Things to know
 

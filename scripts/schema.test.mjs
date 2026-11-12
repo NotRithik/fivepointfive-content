@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {build,parseCSV} from './build.mjs';
+import {build,parseCSV,columnMessage,imagePath,nextId} from './build.mjs';
 import {validateSnapshot,safeURL,youtubeURL,formEndpoint} from './schema.mjs';
 const settings=(await build({localAssets:true})).data.settings;
 const seed={schemaVersion:1,revision:'test',repository:'test/content',generatedAt:new Date().toISOString(),data:{
@@ -25,3 +25,14 @@ test('unconfigured newsletter stays disabled, enabled requires destination',()=>
 test('forms accept only public Formspark submission endpoints',()=>{formEndpoint('https://submit-form.com/abcDEF12','form',true);assert.throws(()=>formEndpoint('https://dashboard.formspark.io/account','form',true));assert.throws(()=>formEndpoint('https://submit-form.com/a?key=secret','form',true));});
 test('contact and newsletter cannot accidentally share a form',()=>{const c=copy();c.data.settings.newsletter.enabled=true;c.data.settings.newsletter.endpoint=c.data.settings.contact.endpoint;assert.throws(()=>validateSnapshot(c),/separate newsletter/);});
 test('invalid schema versions fail closed',()=>{const c=copy();c.schemaVersion=99;assert.throws(()=>validateSnapshot(c));});
+test('image paths copied from GitHub are accepted as the plain path',()=>{
+  assert.equal(imagePath('images/covers/cover%20final.jpg'),'images/covers/cover final.jpg');
+  assert.equal(imagePath(' https://github.com/NotRithik/fivepointfive-content/blob/main/images/covers/a%20b.jpg '),'images/covers/a b.jpg');
+  assert.equal(imagePath('https://example.com/a%20b.jpg'),'https://example.com/a%20b.jpg');
+});
+test('wrong value counts explain the likely fix',()=>{
+  const header=['id','title','hue'];
+  assert.match(columnMessage(header,['A','B']),/comma is probably missing/);
+  assert.match(columnMessage(header,['A','B','C','D']),/double quotes/);
+});
+test('the suggested release ID is the next unused number',()=>{assert.equal(nextId(['5.5-001','5.5-066','5.5-049','OTHER']),'5.5-067');});
